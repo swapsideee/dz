@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color:#F4942F;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    background: radial-gradient(circle,rgba(96, 13, 7, 1) 100%, rgba(198, 27, 14, 1) 22%);
+    width: 100%;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+  
+}
+
+header{
+    padding: 50px 0;
+}
+
+header .logo{
+    font-size: 26px;
+    font-weight: 800;
+}
+
+header nav{
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Josefin Slab", serif;
+}
+
+header nav ul li a{
+    color: #fff;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover{
+    border-bottom: 3px solid #F4942F;
+}
+
+header nav ul li.btn a {
+    background: #F4942F;
+    padding: 16px 40px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover{
+    background: #784107;
+}
+
+header nav ul li.active::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #F4942F;
+    position: relative;
+    top: 10px;
+    left: -15px;
+}
+
+.hero{
+    padding-bottom: 100px;
+    position: relative;
+    
+}
+
+.hero--info{
+    width: 530px;
+    padding-top: 40px;
+}
+
+.hero--info h2{
+    font-family: "Josefin Slab", serif;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.hero--info h1{
+    padding-top: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 170%;
+    margin: 30px 0;
+}
+
+.hero--info p{
+    color: #fff;
+    padding-top: 40px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 170%;
+    margin: 30px 0;
+}
+
+.hero--info .btn{
+    background: #F4942F;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+}
+
+.hero--info .btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero img {
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+
+/*Footer*/
+
+footer{
+    background: #000;
+    padding: 50px;
+}
+
+footer .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .info{
+    font-size: 26px;
+    font-weight: 800;
+}
+
+footer .blocks p{
+    width: 300px;
+    margin: 15px 0;
+}
+
+footer .blocks h3 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+footer .blocks h4 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+footer .blocks ul {
+    list-style: none;
+}
+
+footer .blocks ul li{
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/*section with reviews*/
+
+.reviews {
+    padding-top: 40px;
+}
+
+.reviews h3{
+    font-family: "Josefin Slab", serif;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.reviews p{
+    padding-top: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 170%;
+    margin: 30px 0;
+}
+
+.reviews .see-all {
+
+    font-family: "Josefin Slab", serif;
+    color: #fff;
+    background: #5F4549;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: right;
+    display: block;
+    transition: all 500ms ease;
+}
+
+.reviews .see-all:hover{
+transform: scale(1.1);
+}
+
+.reviews .block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+
+/*all reviews*/
+.all-reviews{
+    padding-top: 40px;
+}
+
+.all-reviews h3{
+    font-family: "Josefin Slab", serif;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.all-reviews .images{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 0;
+}
+
+/*portfolio*/
+.Portfolio{
+    padding-top: 40px;
+}
+
+.Portfolio h1{
+    font-family: "Josefin Slab", serif;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.Portfolio h2{
+    padding-top: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 170%;
+    margin: 30px 0;
+}
+
+.Portfolio .images{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.Portfolio .images span{
+    font-family: "Josefin Slab", serif;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Portfolio .images .block{
+    transition: all 500ms ease;
+}
+
+.Portfolio .images .block:hover{
+    transform: scale(1.1);
+}
+
+/*Contacts*/
+.Contacts {
+    padding-top: 40px;
+}
+
+.Contacts h1{
+    font-family: "Josefin Slab", serif;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.Contacts h2{
+    font-family: "Josefin Slab", serif;
+    color: #fff;
+    padding-top: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.Contacts .contact-block{
+    padding-top: 40px;
+    display: flex;;
+    justify-content: space-between;
+}
+
+.Contacts .contact-block h5{
+    font-family: "Josefin Slab", serif;
+    color: #fff;
+    padding-top: 40px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.Contacts .contact-block ul li{
+    font-family: "Josefin Slab", serif;
+    color: #fff;
+    padding-top: 40px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.Contacts p{
+    font-family: "Josefin Slab", serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 7%;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+.logo-img{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 20px;
+    transition: all 500ms ease;
+}
+
+.logo-img span:hover{
+transform: scale(1.1);
+}
+
+/*Call-back btn*/
+.callback h1{
+    font-family: "Josefin Slab", serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 150px;
+}
+
+input{
+    text-align: center;
+    background: #fff;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    width: 380px;
+    padding: 20px 30px;
+}
+
+.callback p{
+    font-family: "Josefin Slab", serif;
+    color: #fff;
+    padding-top: 40px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.callback .continue-btn {
+    float: right;
+    background: #F4942F;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+}
+
+.callback .continue-btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
